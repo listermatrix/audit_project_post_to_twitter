@@ -10,8 +10,8 @@ class MediaController extends Controller
 {
 
 
-    private $comsumerKey = '';
-    private $comsumerSecrete = '';
+    private $comsumerKey = '';  //twitter  keys
+    private $comsumerSecrete = ''; //twitter  keys
 
 
     public function connect_twitter()
@@ -21,7 +21,6 @@ class MediaController extends Controller
 
 //        /** @var establishing twitter connection $_twitter_connect */
         $_twitter_connect = new TwitterOAuth($this->comsumerKey,$this->comsumerSecrete);
-
 
 //        /** @var  $_access_token  get access token*/
         $_access_token =  $_twitter_connect->oauth('oauth/request_token',['oauth_callback'=>$callback]);
