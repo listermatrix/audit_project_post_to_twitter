@@ -22,7 +22,7 @@ class FormController extends Controller
     {
 
         $twitter  = SocialAuth::query()->first();
-        return view('index',compact('twitter'));
+        return view('home',compact('twitter'));
     }
 
 

@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello CLI!</title>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
+</head>
+<body>
 <div class="col-md-12">
         <div class="card">
             <div class="card-header">AUDIT TRAILS</div>
@@ -42,6 +51,16 @@
             </div>
         </div>
     </div>
+
+<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('js/datatable/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('js/datatable/dataTables.bootstrap4.js')}}"></script>
+<script src="{{asset('js/datatable/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('js/datatable/buttons.print.min.js')}}"></script>
+<script src="{{asset('vendor/datatables/buttons.server-side.js')}}"></script>
+
+{!! $dataTable->scripts() !!}
+</body>
 
 
 

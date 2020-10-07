@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'FormController@index')->name('home.index');
+Route::get('/', 'FormController@audit_table')->name('home.index');
 Route::get('/twitter', 'MediaController@connect_twitter')->name('media.twitter');
 Route::get('/twitter/cbk', 'MediaController@twitter_cbk')->name('media.cbk');
-Route::post('/twitter/post', 'MediaController@twitter_post')->name('media.twitter.post');
+Route::post('/twitter/post', 'MediaController@index')->name('media.twitter.post');
 
 
 
